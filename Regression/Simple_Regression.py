@@ -21,5 +21,9 @@ for i in range(n):
 w1 = (n * XiYi - X * Y) / (n * Xi2 - X ** 2)
 w0 = (Y - w1 * X) / n
 
+# get x value for predict
+x = int(input("Enter the x for predict >> "))
+
 print(f"w1 (slope)     = {w1}")
 print(f"w0 (intercept) = {w0}")
+print(f"predict value for x = {x} : {w0 + w1 * x}")
